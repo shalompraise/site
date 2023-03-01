@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="shalom praise" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- unicons
+        ================================================== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        
+    <!-- swiper - CSS
+        ================================================== -->
+    <link rel="stylesheet" href="">
+    
+    <!-- CSS
+        ================================================== -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/splashscreen.css">
+
+    <!-- HEAD
+        ================================================== -->
+    <title>shalom praise</title>
+    <link rel="icon" href="assets/img/mylogo.svg" type="image/svg+xml">
+    
+</head>
+<body>
+
+    <!-- ========================== SPLASH SCREEN ========================== -->
+    <div class="splash">
+        <div class="fadeIn contents">
+            <img src="assets/img/mylogo.svg" alt="personal logo" class="logo">
+            <h2 class="splash__title">shalom praise</h2>
+        </div>
+    </div>
+
+
+     <!--==================== HEADER ====================-->
+     <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">shalom<span>praise</span></a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="#stories" class="nav__link">
+                            <i class="uil uil-estate nav__icon"></i> stories
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#works" class="nav__link">
+                            <i class="uil uil-scenery nav__icon"></i> works
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#contacts" class="nav__link">
+                            <i class="uil uil-message nav__icon"></i> contacts
+                        </a>
+                    </li>
+                </ul>
+
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+            </div>
+
+            <div class="nav__btns">
+                <!-- Theme change button -->
+                <i class="uil uil-moon change-theme" id="theme-button" onclick="changeSrc"></i>
+
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content grid">
+                    <div class="home__social">
+                        <a href="https://www.linkedin.com/in/shalompraise/" target="_blank" class="home__social-icon">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+
+                        <a href="https://dribbble.com/praise_" target="_blank" class="home__social-icon">
+                            <i class="uil uil-dribbble"></i> 
+                        </a>
+
+                        <a href="https://github.com/praise-shalom" target="_blank" class="home__social-icon">
+                            <i class="uil uil-github-alt"></i> 
+                        </a>
+                    </div>
+
+                    <div class="home__img">
+                        <svg class="home__blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <mask id="mask0" mask-type="alpha">
+                                <path fill="rgba(247, 247, 247, 1)" d="M67.3,-52.7C83.5,-33.4,90.4,-5.6,84.7,19.4C79.1,44.3,60.9,66.5,38,76.7C15,87,-12.6,85.3,-34.5,73.9C-56.4,62.5,-72.4,41.3,-78.1,17.5C-83.8,-6.3,-79,-32.7,-64.2,-51.7C-49.5,-70.8,-24.7,-82.4,0.4,-82.7C25.6,-83,51.1,-72.1,67.3,-52.7Z" transform="translate(100 100)" />
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <path fill="rgba(247, 247, 247, 1)" d="M67.3,-52.7C83.5,-33.4,90.4,-5.6,84.7,19.4C79.1,44.3,60.9,66.5,38,76.7C15,87,-12.6,85.3,-34.5,73.9C-56.4,62.5,-72.4,41.3,-78.1,17.5C-83.8,-6.3,-79,-32.7,-64.2,-51.7C-49.5,-70.8,-24.7,-82.4,0.4,-82.7C25.6,-83,51.1,-72.1,67.3,-52.7Z" transform="translate(100 100)" />
+                                
+                                <image class="home__blob-img" x="22" y="45" xlink:href="assets/img/sda2.gif"/>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="home__data">
+                        <div class="hello">
+                            <h4 class="home__subtitle">Jambo, I am Shalom Praise</h4>
+                            <img class="home__subtitle-img" src="assets/img/hello.svg" alt="hello hand emoji">
+                        </div>
+                        <h1 class="home__title">Software Engineer <br> <span>for</span> android apps</h1>
+                        <p class="home__description">
+                            A design oriented Apps Developer && 
+                            originator of apps that are: conversion-focused, 
+                            brand-accurate and people-friendly.
+                        </p>
+                        <div class="button__reveal">
+                            <img src="assets/img/droid.svg" alt="" class="droid__image">
+                            <a href="#works" class="button button--flex">
+                                view work <i class="uil uil-scenery button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="home__scroll">
+                    <a href="#" class="home__scroll-button">
+                        <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                        <span class="home__scroll-name">scroll down</span>
+                        <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== STORIES ====================-->
+        <section class="stories section" id="stories">
+            <h2 class="section__title">stories.</h2>
+            <span class="section__subtitle">My Introduction</span>
+
+            <div class="stories__container container grid">
+                <div class="stories__img-container">
+                    <img src="assets/img/stories img.svg" alt="" class="stories__img">
+                </div>
+
+                <div class="stories__data">
+                    <p class="stories__description">
+                        Consistently & Passionately I am a Self taught Software Developer based in Nairobi, Kenya. <br> <br>
+                        I am currently <span>open to work</span> and projects <span>remote or onsight</span>. 
+                        On my leisure-time i listen to music and also enjoy art & fashion.
+                    </p>
+
+                    <div class="stories__buttons">
+                        <a download="" href="assets/pdf/Shalom Praise - RESUME.pdf" class="button button--flex">
+                            see resume<i class="uil  uil-cloud-download button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="break__container">
+
+                <!-- stories 2-->
+                <span class="section__subtitle stories-subtext">Tech Staff I Use</span>
+                <div class="stories__two__container container grid">
+                    <!-- <div class="stories__tech-img stories__img"></div> -->
+                    <img src="assets/img/stories2.svg" alt="" class="stories__img stories-2-img" id="stories-img">
+
+                    <div class="stories__pack">
+                        <div class="stories__two__data pack-1">
+                            <div class="stack">
+                                <h3 class="stack__title">Languages</h3>
+                                <p class="item">Java</p>
+                                <p class="item">Kotlin</p>
+                            </div>
+
+                            <div class="stack">
+                                <h3 class="stack__title">Architecture</h3>
+                                <p class="item">Mvp</p>
+                                <p class="item">Mvvm</p>
+                            </div>
+
+                            <div class="stack">
+                                <h3 class="stack__title">Google Services</h3>
+                                <p class="item">Maps</p>
+                                <p class="item">Location</p>
+                                <p class="item">Places</p>
+                            </div>
+
+                            <div class="stack">
+                                <h3 class="stack__title">Image Loaders</h3>
+                                <p class="item">Picasso</p>
+                                <p class="item">Glide</p>
+                            </div>  
+                        </div>
+
+                        <div class="stories__wide__img">
+                            <img src="assets/img/stories2.svg" alt="" class="stories__img" id="stories-img">
+                        </div>
+
+                        <div class="stories__two__data pack-2">
+                            <div class="stack">
+                                <h3 class="stack__title">Databases/Storage</h3>
+                                <p class="item">Realm Database</p>
+                            </div>
+
+                            <div class="stack">
+                                <h3 class="stack__title">Push Notifications</h3>
+                                <p class="item">Firebase</p>
+                                <p class="item">Google Cloud Messaging</p>
+                            </div>
+
+                            <div class="stack">
+                                <h3 class="stack__title">Rest</h3>
+                                <p class="item">Retrofit</p>
+                                <p class="item">OkHttp</p>
+                                <p class="item">Gson</p>
+                            </div>
+
+                            <div class="stack">
+                                <h3 class="stack__title">Continous Integration Tools</h3>
+                                <p class="item">Jenkins</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+            </div>
+
+            <!-- stories 3-->
+            <span class="section__subtitle stories-subtext">My Process to build your App</span>
+            <div class="stories__three__container container grid stack__div">
+                <div class="stories__three__data">
+                    <span class="stack__number">01</span>
+
+                    <div class="stack__grid">
+                        <div class="stack__header">
+                            <h3 class="stack__title-process">Discovery Call</h3>
+                            <i class="uil uil-phone-pause stack__icon"></i>
+                        </div> 
+
+                        <div>
+                            <p class="stack__description">
+                                This first step is where i gladly get to know you. 
+                                Before i design and develop your amazing app, i actually need to understand you, 
+                                get what you like, your needs and your great audience for the app.
+                            </p>
+
+                            <hr class="stack__liner">
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="stories__three__data">
+                    <span class="stack__number">02</span>
+
+                    <div class="stack__grid">
+                        <div class="stack__header">
+                            <h3 class="stack__title-process">Design Phase</h3>
+                            <i class="uil uil-palette stack__icon"></i>
+                        </div> 
+                        
+                        <p class="stack__description">
+                            I keenly get what i have learned from you and craft a prototype that's tailored to meet your specific needs, 
+                            all while accurately representing your brand and keeping things aesthetically pleasing and usable for your audience.
+                        </p>
+
+                        <hr class="stack__liner">
+                    </div>
+                </div>
+
+                <div class="stories__three__data">
+                    <span class="stack__number">03</span>
+
+                    <div class="stack__grid">
+                        <div class="stack__header">
+                            <h3 class="stack__title-process">Build Phase</h3>
+                            <i class="uil uil-bug stack__icon"></i>
+                        </div> 
+                        
+                        <p class="stack__description">
+                            Once you are happy with the designs, 
+                            i will proceed to building them making sure everything is optimized to follow modern App practices, 
+                            such as speed, security and reliability.
+                        </p>
+
+                        <hr class="stack__liner">
+                    </div>
+                </div>
+
+                <div class="stories__three__data">
+                    <span class="stack__number">04</span>
+
+                    <div class="stack__grid">
+                        <div class="stack__header">
+                            <h3 class="stack__title-process">Launch Phase</h3>
+                            <i class="uil uil-clock stack__icon"></i>
+                        </div> 
+                        
+                        <p class="stack__description">
+                            This is after i've completed the build and double-checked everything alongside your approval.
+                            <span>In this phase i will also provide some training videos on how you can add content to your app so you can do it yourself.</span> 
+                        </p>
+
+                        <hr class="stack__liner">
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <!--==================== WORKS ====================-->
+        <section class="works section" id="works">
+            <h2 class="section__title">works.</h2>
+            <span class="section__subtitle">My Portfolio</span>
+
+            <div class="works__content container grid">
+                <div class="works__project">
+                    <div class="project__gelt__01">
+                        <span class="project__number">01</span>
+                        
+                        <div class="project__info">
+                            <h2 class="project__title">Gelt</h2>
+                            <h4 class="project__subtitle">Personal project, in-progress</h4>
+                            <p class="project__description">Financial App to aid in money management and expense tracking.</p>
+                            <div class="project__links">
+                                <a href="projectbrief.html" class="internal__link"> 
+                                    <span>view case study</span> <hr> 
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="project__image">
+                            <img class="gelt__image" src="assets/img/gelt image mobile.svg" alt="">
+                        </div> 
+                    </div>
+                </div>
+
+                <div class="project__buyCoffee">
+                    <span class="buyCoffee__subtitle">-- Like my work above --</span>           
+                    <a href='https://ko-fi.com/O5O5HTPXN' target='_blank'><img 
+                        height='40' style='border:0px;height:40px;' 
+                        src='https://storage.ko-fi.com/cdn/kofi2.png?v=3' border='0' 
+                        alt='Buy Me a Coffee at ko-fi.com' />
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <!--==================== FAQ's ====================-->
+        <section class="faqs section" id="faqs">
+            <div class="faqs__container container grid">
+                <h2 class="section__title faqs-title">FAQ's</h2>
+
+                <div class="faqs-area">
+                    <!--==================== FAQ's 1====================-->
+                    <div class="faqs__content faqs__open">
+                        <div class="faqs__header">
+                            <i class="uil uil-arrow-down faqs__arrow"></i>
+
+                            <h3 class="faqs__question">What's the average cost for you to create an app?</h3>
+                        </div>
+
+                        <div class="faqs__data grid">
+                            <p class="faqs__paragraph">
+                                The final price directly relates to the project scope, timeline and deliverables. As real project scope 
+                                can't be determined wothout a formed strategy, the first first stage of the project is Design Strategy. <br> <br>
+                                After this stage, together we'll have a clear overview of what we're building, 
+                                what resources are required and how much time we'll need to complete the project. Once we have a clear picture of this, 
+                                I'll be able to propose you the final price and deadline. <br> <br>
+                                Based on my previous projects, clients typically come to me with more than <span>$300</span> and less than <span>$2,000</span> in their budget.
+                            </p>
+                        </div>
+
+                        <hr class="faqs__liner">
+                    </div>
+
+                    <!--==================== FAQ's 2====================-->
+                    <div class="faqs__content faqs__close">
+                        <div class="faqs__header">
+                            <i class="uil uil-arrow-down faqs__arrow"></i>
+
+                            <h3 class="faqs__question">How long does it take you to deliver an app?</h3>
+                        </div>
+
+                        <div class="faqs__data grid">
+                            <p class="faqs__paragraph">
+                                It depends on the project scope. But from previous experience, designing and building is in reference to the amount of features needed. 
+                                A Small App (i.e Notes App)  takes 3-4 weeks, Mid-size apps (i.e Recipe App) 
+                                take 5-6 weeks and Big-size apps (i.e Food delivery) takes 8-12 weeks.
+                            </p>
+                        </div>
+
+                        <hr class="faqs__liner">
+                    </div>
+
+                    <!--==================== FAQ's 3====================-->
+                    <div class="faqs__content faqs__close">
+                        <div class="faqs__header">
+                            <i class="uil uil-arrow-down faqs__arrow"></i>
+
+                            <h3 class="faqs__question">Do you build the apps all by yourself?</h3>
+                        </div>
+
+                        <div class="faqs__data grid">
+                            <p class="faqs__paragraph">
+                                Depending on your need,scale and time of delivery, i take into account if i will need to collaborate with other developers
+                                 through my links or have it worked out solo. Either case you will be involved in the whole process.
+                            </p>
+                        </div>
+
+                        <hr class="faqs__liner">
+                    </div>
+
+                    <!--==================== FAQ's 4====================-->
+                    <div class="faqs__content faqs__close">
+                        <div class="faqs__header">
+                            <i class="uil uil-arrow-down faqs__arrow"></i>
+
+                            <h3 class="faqs__question">What can i expects in our first call?</h3>
+                        </div>
+
+                        <div class="faqs__data grid">
+                            <p class="faqs__paragraph">
+                                Get to know each other and introductions, choose social platfform for communications 
+                                and have an understanding of your great idea for the app. 
+                            </p>
+                        </div>
+
+                        <hr class="faqs__liner">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--==================== CONTACTS ====================-->
+        <section class="contacts section" id="contacts">
+            <h2 class="section__title">contacts.</h2>
+            <span class="section__subtitle">Get In Touch</span>
+
+            <div class="contacts__content container grid">
+                <div class="contacts__section">
+                    <div class="contacts__one">
+                        <h3 class="contacts__title">Nice to meet you</h3>
+                        <p class="contacts__description">I love to solve real problems with friendly professionals and incredible people !</p>
+
+                        <div class="wide-flex">
+                            <img src="assets/img/contacts-img.svg" alt="" class="contacts__image">
+
+                            <div class="chat__links">
+                                <span class="chat__title">let's connect</span>
+                                <ul class="links">
+                                    <a href="https://www.linkedin.com/in/shalompraise/" target="_blank" class="link"><i class="uil uil-linkedin-alt link__icon"></i></a>
+                                    <a href="https://dribbble.com/praise_" target="_blank" class="link"><i class="uil uil-dribbble link__icon"></i></a>
+                                    <a href="https://github.com/praise-shalom" target="_blank" class="link"><i class="uil uil-github-alt link__icon"></i></a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contacts__two" id="info">
+                        <h3 class="contacts__title">You got a cool project in mind?</h3>
+                        <p class="contacts__description">Let's collaborate and and create a superb app for you.</p>
+
+                        <div class="email__link">
+                            <span>Drop me an email</span>
+                            <a href="#mail-fm" class="button-fm" id="open-mail">
+                                praiseshalom23@gmail.com
+                                <i class="uil uil-arrow-right fm-icon"></i>
+                            </a>  
+                        </div>
+
+                        <div class="mobile__link">
+                            <span>Make a call</span>
+                            <a href="tel:+254740953738" class="button-fm">
+                                +2547 4095 3738
+                                <i class="uil uil-arrow-right fm-icon"></i>
+                            </a>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+
+    <div class="wrapper" id="wrapper"></div>
+        <form action="" class="mail-form" id="mail-fm" onsubmit="sendEmail(); reset(); return false;">
+            <div class="left">
+                <img src="assets/img/mail2.svg" alt="">
+            </div>
+
+            <div class="right">
+                <h3>Shoot me a flashy email</h3>
+                <p>turning your ideas to reality.</p>
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email Address" required>
+                <textarea name="message" id="message" rows="4" placeholder="What's your dream idea?"></textarea>
+                
+                <div class="button-f">
+                    <a href="" type="submit">Submit</a>
+                </div> 
+            </div>
+
+            <a href="#mail-fm" class="close-btn">
+                <i class="uil uil-times" id="close-btn"></i>
+            </a>
+        </form>
+
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+
+                <!-- <img src="assets/img/mylogo.svg" alt="" class="footer__logo wide-f-logo"> -->
+
+                <div class="footer__name-tag">
+                    <img src="assets/img/mylogo.svg" alt="" class="footer__logo">
+                    <h1 class="footer__title">Shalom Praise</h1>
+                    <span class="footer__subtitle">Android Developer</span>
+                </div>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#home" class="footer__link">home.</a>
+                    </li>
+                    <li>
+                        <a href="#stories" class="footer__link">stories.</a>
+                    </li>
+                    <li>
+                        <a href="#works" class="footer__link">works.</a>
+                    </li>
+                    <li>
+                        <a href="#contacts" class="footer__link">contacts.</a>
+                    </li>
+                </ul>
+
+                <div class="footer__socials">
+                    <a href="https://twitter.com/praise_shalom" target="_blank" class="footer__social">
+                        <i class="uil uil-twitter-alt"></i>
+                    </a>
+                    <a href="https://www.instagram.com/pra.ise_/" target="_blank" class="footer__social">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+                    <a href="https://www.pinterest.com/bvlkpraise/" target="_blank" class="footer__social">
+                        <i class="uil uil-snapchat-alt"></i>
+                    </a>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169 Shalom Praise. All rights reserved 2023</p>
+        </div>
+    </footer>
+
+
+
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+
+    <!--==================== JS ====================-->
+    <script src="js/splash.js"></script>
+    <script src="js/main.js"></script>
+    
+</body>
+</html>
